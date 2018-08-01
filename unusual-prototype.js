@@ -6,6 +6,3 @@ String.prototype.toMoney = function(decimal,separator){
     /** split reverse and join then divide the string into 3 parts then insert the separator you wish for */
     return number.split('').reverse().join('').replace(/(\d{3}(?!.*\.|$))/g, '$1'+separator).split('').reverse().join('');
 }
-
-var x = "100000000000";
-console.log(x.toMoney(0));
